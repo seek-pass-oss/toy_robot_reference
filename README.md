@@ -93,14 +93,7 @@ Is it to demonstrate good OO skills?
 Demonstrate good domain modelling skills?
 
 I made the assumption that it's all of the above (to some extent). So approaching this, relatively small, problem as if it's
-a larger one which needs to account for some level of extensibility, changing requirements etc. Having said that, since I've
-done this coding test before, I also decided to implement a smallest working solution, code-golf style. You can find it at:
-
-```bash
-simple/robot_challenge
-```
-
-It's 30 lines of non-boilerplate code. It's not quite as robust as it could be, but it fulfils the problem requirements. Execute it in the same way as above if it's of interest. In my case it was just for the purposes of bonus fun :).
+a larger one which needs to account for some level of extensibility, changing requirements etc. 
 
 There are many questions that can be asked to clarify the requirements of this problem. These include:
 
@@ -141,8 +134,3 @@ addition to providing the logic for moving in the new direction).
 
 There is also an integration test `spec/robot_application/main_integration_spec.rb` which I've chosen to mix in with the unit
 test, just for the sake of simplicity and the fact that we only really need the one.
-
-I've also thought about whether or not it would be important for us to keep all the robot control logic together, instead of spread
-into separate classes. I decided to explore this further in `suboptimal/robot_challenge`, but we ended up with one very big class with
-a potentially infinite interface in the face of new requirements as well as suffering greatly in terms of testability. It does work
-however and can be run in the same was as above `suboptimal/robot_challenge < test_data.txt` :).

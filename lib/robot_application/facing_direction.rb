@@ -21,7 +21,7 @@ module RobotApplication
 
       def name_for(direction_value)
         value = inverted_directions[direction_value]
-        value ? value.to_s.upcase : nil
+        value&.to_s&.upcase
       end
 
       private

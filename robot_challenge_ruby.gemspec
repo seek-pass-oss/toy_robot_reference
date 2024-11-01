@@ -11,7 +11,8 @@ Gem::Specification.new do |spec|
   spec.summary = ""
   spec.description = ""
   spec.homepage = ""
-  spec.required_ruby_version = " ~> 2.7"
+  spec.required_ruby_version = " ~> 3.3"
+  spec.metadata["rubygems_mfa_required"] = "true"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
@@ -21,11 +22,4 @@ Gem::Specification.new do |spec|
   spec.bindir        = "bin"
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-
-  spec.add_development_dependency "bundler", "~> 2.1"
-  spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "rspec", "~> 3.9"
-  spec.add_development_dependency "rubocop", "~> 0.89.1"
-  spec.add_development_dependency "rubocop-performance", "~> 1.7.1"
-  spec.add_development_dependency "rubocop-rspec", "~> 1.43.2"
 end

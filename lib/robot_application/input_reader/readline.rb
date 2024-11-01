@@ -13,7 +13,7 @@ module RobotApplication
         @input_io = input_io
       end
 
-      def each(&_block)
+      def each(&)
         while (line = ::Readline.readline("> ", true))
           yield(line.chomp)
         end

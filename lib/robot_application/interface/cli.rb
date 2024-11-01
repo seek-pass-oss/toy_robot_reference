@@ -10,7 +10,7 @@ module RobotApplication
       RENDERER_TYPES = TableRenderer::Factory.types
 
       # rubocop:disable Metrics/MethodLength
-      def self.parse(arguments = ARGV, &_block)
+      def self.parse(arguments = ARGV, &)
         params = Params.new
 
         OptionParser.new do |opts|

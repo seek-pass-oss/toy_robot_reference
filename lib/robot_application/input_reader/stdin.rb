@@ -11,7 +11,7 @@ module RobotApplication
         @input_io = input_io
       end
 
-      def each(&_block)
+      def each(&)
         while (line = input_io.gets)
           yield(line.chomp)
         end

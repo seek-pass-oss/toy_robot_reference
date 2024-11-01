@@ -5,7 +5,8 @@ require:
 AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
-  TargetRubyVersion: 2.7
+  TargetRubyVersion: 3.3
+  NewCops: enable
 
   Exclude:
     - "suboptimal/robot_challenge"
@@ -15,7 +16,6 @@ AllCops:
 Layout/LineLength:
   Severity: warning
   Max: 150
-  IgnoredPatterns: ['^\s*#']
 
 Metrics/MethodLength:
   Max: 15
